@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-const Blog = () => {
+const Hero = () => {
   return (
     <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
       <div class="flex-shrink-0">
@@ -46,6 +46,6 @@ const Blog = () => {
       </div>
     </div>
   );
-};
+}
 
-export default Blog;
+export default Hero

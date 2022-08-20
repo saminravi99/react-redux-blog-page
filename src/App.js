@@ -1,10 +1,15 @@
 import './App.css';
+import Blogs from './components/Blogs/Blogs';
+import Header from './components/Header/Header';
+import SearchBar from './components/SearchBar/SearchBar';
 
 function App() {
   return (
-    <div >
-     <h1>Hello</h1>
-    </div>
+    <>
+     <Header/>
+     <SearchBar/>
+     <Blogs/>
+    </>
   );
 }
 
