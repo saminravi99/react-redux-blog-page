@@ -8,7 +8,6 @@ const Header = () => {
         <a href="#">
           <img className="h-10" src={logoImage} alt="HashNode" />
         </a>
-        {/* // <!-- The button to open modal --> */}
         <label htmlFor="add-blog" className="btn modal-button btn-outline">
           Add Blog
         </label>

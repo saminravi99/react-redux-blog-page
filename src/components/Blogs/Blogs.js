@@ -11,7 +11,7 @@ const Blogs = () => {
   );
 
   let noSearchFilter;
-  let noAuthorCategoryFilter;
+  let noAuthorCategoryFilter = [];
 
   if (search) {
     noSearchFilter = blogs.filter((blog) =>
