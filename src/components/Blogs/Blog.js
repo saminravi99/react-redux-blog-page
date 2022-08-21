@@ -18,10 +18,7 @@ const Blog = ({
     const handleAuthor = (author) =>{
         dispatch(authorFilter(author))
     }
-    console.log({
-      blogImg,
-      authorImg,
-    });
+    
   return (
     <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
       <div className="flex-shrink-0">

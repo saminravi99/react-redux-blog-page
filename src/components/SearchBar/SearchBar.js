@@ -66,8 +66,8 @@ const SearchBar = () => {
               Search Results for:{" "}
               <span className="font-bold pl-2">
                 {search && (
-                  <button className="btn btn-sm btn-outline ">
-                    <span className="text-black">{search ? search : null}</span>
+                  <button className="btn text-black hover:text-white btn-sm btn-outline ">
+                    <span>{search ? search : null}</span>
                     <svg
                       onClick={handleRemoveSearchFilter}
                       xmlns="http://www.w3.org/2000/svg"
@@ -87,11 +87,11 @@ const SearchBar = () => {
                 )}
                 {category && (
                   <button
-                    className={`btn btn-sm btn-outline  ${
+                    className={`btn text-black hover:text-white btn-sm btn-outline  ${
                       category ? (search ? "ml-2" : "") : ""
                     }`}
                   >
-                    <span className="text-black">
+                    <span>
                       {category ? (search ? `${category}` : category) : null}
                     </span>
                     <svg
@@ -113,11 +113,11 @@ const SearchBar = () => {
                 )}
                 {author && (
                   <button
-                    className={`btn btn-sm btn-outline ${
+                    className={`btn text-black hover:text-white btn-sm btn-outline ${
                       author ? (category ? "ml-2" : "") : ""
                     } `}
                   >
-                    <span className="text-black">
+                    <span>
                       {author ? (category ? `${author}` : author) : null}
                     </span>
                     <svg
