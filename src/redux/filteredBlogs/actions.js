@@ -1,11 +1,10 @@
-import { AUTHOR_FILTER, CATEGORY_FILTER, SEARCH_FILTER } from "./actionTypes";
+import { AUTHOR_FILTER, CATEGORY_FILTER, REMOVE_AUTHOR_FILTER, REMOVE_CATEGORY_FILTER, REMOVE_FILTER, REMOVE_SEARCH_FILTER, SEARCH_FILTER } from "./actionTypes";
 
 export const categoryFilter = (category) => {
     return {
         type: CATEGORY_FILTER,
         payload: {
             category,
-            blogs,
         }
     };
 }
@@ -15,7 +14,6 @@ export const searchFilter = (search) => {
         type: SEARCH_FILTER,
         payload: {
             search,
-            blogs,
         }
     };
 }
@@ -25,7 +23,30 @@ export const authorFilter = (author) => {
         type: AUTHOR_FILTER,
         payload: {
             author,
-            blogs,
         }
+    };
+}
+
+export const removeFilter = () => {
+    return {
+        type: REMOVE_FILTER,
+    };
+}
+
+export const removeSearchFilter = () => {
+    return {
+        type: REMOVE_SEARCH_FILTER,
+    };
+}
+
+export const removeCategoryFilter = () => {
+    return {
+        type: REMOVE_CATEGORY_FILTER,
+    };
+}
+
+export const removeAuthorFilter = () => {
+    return {
+        type: REMOVE_AUTHOR_FILTER,
     };
 }
